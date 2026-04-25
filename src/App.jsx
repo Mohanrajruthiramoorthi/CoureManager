@@ -230,7 +230,7 @@ function Students() {
   const save = async () => {
     if (!form.Name.trim() || !form.Mobile.trim()) return toast("Name & mobile required", "err");
     setLoading(true);
-    const payload = { Name: form.Name, Mail: form.Mail, Mobile: form.Mobile, Parent_name: form.Parent_name, Couse_id: form.Couse_id ? parseInt(form.Couse_id) : null };
+    const payload = { Name: form.Name, Mail: form.Mail, Mobile: form.Mobile, Parent_name: form.Parent_name, Course_id: form.Couse_id ? parseInt(form.Couse_id) : null };
     if (editId) { await db("Student").update("id", editId, payload); toast("Updated!"); }
     else { await db("Student").insert(payload); toast("Enrolled!"); }
     setLoading(false); setShow(false); setEditId(null); setForm({ Name: "", Mail: "", Mobile: "", Parent_name: "", Couse_id: "" }); load();
