@@ -1,5 +1,6 @@
 import { useState, useEffect, createContext, useContext } from "react";
 
+
 const SURL = "https://gjzbzugjatdqjdafhqsx.supabase.co";
 const SKEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdqemJ6dWdqYXRkcWpkYWZocXN4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY4NDgwMTYsImV4cCI6MjA5MjQyNDAxNn0.PmqN2EH9mE1cv9Z0x8oVYZjXipFKAv-mbp2mPGcJjzY";
 
